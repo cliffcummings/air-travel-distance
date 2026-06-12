@@ -1,0 +1,182 @@
+:root {
+    --back_color1: #0D1B2A;
+    --back_color2: #1D5599;
+    --back_color3: #57849C;
+    --accent_color1: #7FC6DE;
+    --accent_color2: #DFDFDF;
+    --accent_color3: #EFEFEF;
+    --wild_red: #FF0000;
+    --sunburst_red: #CC0000;
+    --text_white: #ffffff;
+    --contact1: #ffff00;
+    --contact2: #addae6;}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+
+/* white background in the header and body */
+/* HEADER CONTENT */
+
+header {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: var(--back_color3);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+/* BODY CONTENT */
+
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: var(--text_white);
+}
+
+main {
+    padding: 1rem;
+    min-width: 400px;
+    width: 100%;
+}
+
+#data-source {
+    margin-bottom: 1rem;
+}
+
+.source-btn {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent_color3);
+    border: 1px solid var(--back_color2);
+    cursor: pointer;
+}
+
+.source-btn.active {
+    background-color: var(--back_color2);
+    color: var(--text_white);
+}
+
+.airport-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.airport-lookup label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+#toggle-latlong-btn {
+    background-color: var(--contact1);
+}
+
+#json-display {
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 1rem;
+    background-color: var(--accent_color3);
+    border: 1px solid var(--back_color2);
+}
+
+button {
+    margin: 0.25rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-right: 2rem;
+}
+
+/* FOOTER CONTENT */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    color: white;
+    background-color: var(--back_color3);
+    text-align: center;
+    min-width: 400px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text_white);
+}
+
+.logo-icon {
+    height: 2rem;
+    width: auto;
+}
+
+.banner-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin: 0  ;
+    padding: 0;
+}
+
+.banner-links a {
+    color: var(--text_white);
+    text-decoration: none;
+}
+
+.banner-links a:hover {
+    color: var(--contact1);
+    text-decoration: underline;
+}
+
+footer .banner {
+    flex-direction: row;
+}
+
+footer .banner p {
+    margin: 0;
+}
+
+h3 {
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--back_color2);
+}
+
+@media (max-width: 600px) {
+    .airport-columns {
+        grid-template-columns: 1fr;
+    }
+
+    #toggle-latlong-btn {
+        display: none;
+    }
+
+    .latlng {
+        display: none;
+    }
+}

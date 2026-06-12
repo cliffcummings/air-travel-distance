@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="WDD330 Travel Distances Home Page">
+        <meta name="author" content="Cliff Cummings">
+                   
+        <link rel="stylesheet" href="/styles/styles.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+            
+        <script src="/scripts/main.js" type="module"></script>
+
+        <title>Travel Distances Home</title>
+    </head>
+
+<body>
+    <header id="header">
+    </header>
+
+    <main class="divider">
+
+        <div id="data-source">
+            <h3>Select Airport Data Source:</h3>
+            <button type="button" class="source-btn active" id="btn-local">Local US Airports</button>
+            <button type="button" class="source-btn" id="btn-airlabs">AirLabs (API)</button>
+            <button type="button" class="source-btn" id="btn-aviationstack">AviationStack (API)</button>            
+            <p id="data-source-status"></p>
+        </div>
+
+        <div id="display-options">
+            <button type="button" id="toggle-latlong-btn">Hide LatLng</button>
+        </div>
+
+        <div class="airport-columns">
+            <div class="airport-lookup" id="src-lookup">
+                <h3>Source Airport</h3>
+                <label for="src-country-code">Enter 2-Letter Country Code (US is default):</label>
+                <input type="text" id="src-country-code" maxlength="2" placeholder="e.g. US" value="US" />
+
+                <label for="src-airport-code">Enter 3-Letter Airport Code:</label>
+                <input type="text" id="src-airport-code" maxlength="3" placeholder="e.g. SLC" />
+                
+                <button type="button" id="src-lookup-btn">Look Up</button>
+                <button type="button" id="src-remove-btn">Remove</button>
+                <p id="src-airport-result"></p>
+            </div>
+
+            <div id="dst-column">
+                <div class="airport-lookup" id="dst-lookup">
+                    <h3>Destination Airport 1</h3>
+                    <label for="dst-country-code">Enter 2-Letter Country Code (US is default):</label>
+                    <input type="text" id="dst-country-code" maxlength="2" placeholder="e.g. US" value="US"/>
+                
+                    <label for="dst-airport-code">Enter 3-Letter Airport Code:</label>
+                    <input type="text" id="dst-airport-code" maxlength="3" placeholder="e.g. SLC" />
+                
+                    <button type="button" id="dst-lookup-btn">Look Up</button>
+                    <p id="dst-airport-result" class="dst-airport-result"></p>
+                    <p id="distance-result" class="distance-result"></p>
+                </div>
+                <button type="button" id="add-dst-button">Add Destination</button>
+            </div>
+        </div>
+                          
+    </main>
+
+    <footer id="footer">
+    </footer>
+</body>
+
+</html>
