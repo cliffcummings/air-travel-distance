@@ -120,7 +120,7 @@ async function loadAirports() {
     dataSourceStatus.textContent = "Loading airport data...";
 
     if (currentSource === "local") {
-      const response = await fetch("/data/UsAirports.json");
+      const response = await fetch("data/UsAirports.json");
       if (!response.ok) throw new Error(`Failed to load local airport data. Status: ${response.status}`);
       const data = await response.json();
       rawData = data.response;
