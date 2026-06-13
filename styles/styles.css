@@ -71,6 +71,15 @@ main {
     margin-top: 0.5rem;
 }
 
+#src-country-code,
+#src-airport-code,
+#dst-country-code,
+#dst-airport-code,
+.dst-country-input,
+.dst-iata-input {
+    text-transform: uppercase;
+}
+
 #toggle-latlong-btn,
 #clear-storage-btn {
     background-color: var(--contact1);
