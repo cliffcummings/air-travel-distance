@@ -71,7 +71,8 @@ main {
     margin-top: 0.5rem;
 }
 
-#toggle-latlong-btn {
+#toggle-latlong-btn,
+#clear-storage-btn {
     background-color: var(--contact1);
 }
 
@@ -172,7 +173,8 @@ h3 {
         grid-template-columns: 1fr;
     }
 
-    #toggle-latlong-btn {
+    #toggle-latlong-btn,
+    #clear-storage-btn {
         display: none;
     }
 

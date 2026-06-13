@@ -24,3 +24,24 @@ export async function LoadHeaderFooter() {
   document.querySelector('#copywrite').innerHTML = `&copy; ${new Date().getFullYear()} Cliff Cummings`;
   document.querySelector("#lastModified").textContent = `Last Modified: ${lastModifiedDate}`;
 }
+
+export function getLocalStorage(key) {
+  const rawValue = localStorage.getItem(key);
+  if (!rawValue) {
+    return null;
+  }
+  try {
+    return JSON.parse(rawValue);
+  } catch (error) {
+    console.warn(`Unable to parse localStorage value for ${key}:`, error);
+    return null;
+  }
+}
+
+export function setLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+export function clearLocalStorage(key) {
+  localStorage.removeItem(key);
+}

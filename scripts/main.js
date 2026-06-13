@@ -1,9 +1,10 @@
-import { LoadHeaderFooter } from "./utils.mjs";
+import { LoadHeaderFooter, setLocalStorage, getLocalStorage, clearLocalStorage } from "./utils.mjs";
 
 const srcIataInput = document.querySelector("#src-airport-code");
 const srcCountryInput = document.querySelector("#src-country-code");
 const srcButton = document.querySelector("#src-lookup-btn");
 const srcResult = document.querySelector("#src-airport-result");
+const savedSrcAirport = getLocalStorage("srcAirport");
 
 const dstIataInput = document.querySelector("#dst-airport-code");
 const dstCountryInput = document.querySelector("#dst-country-code");
@@ -12,6 +13,7 @@ const dstResult = document.querySelector("#dst-airport-result");
 
 const distanceResult = document.querySelector("#distance-result");
 
+const srcRemoveBtn = document.querySelector("#src-remove-btn");
 const addDstButton = document.querySelector("#add-dst-button");
 const dstColumn = document.querySelector("#dst-column");
 
@@ -22,6 +24,7 @@ const btnAviationStack = document.querySelector("#btn-aviationstack");
 
 const dataSourceStatus = document.querySelector("#data-source-status");
 const toggleLatLngBtn = document.querySelector("#toggle-latlong-btn");
+const clearStorageBtn = document.querySelector("#clear-storage-btn");
 
 // -------------------------------------------------------
 // API keys are stored as constants — when the project
@@ -35,12 +38,18 @@ const AVIATIONSTACK_KEY = "4d1a4a79c8c9c10e094019028275c0e7";
 let airportData = [];
 let srcAirport = null;
 let dstCounter = 1;
-let currentSource = "local";
-let showLatLng = true;
+let showLatLng = getLocalStorage("showLatLng") ?? true;
+let currentSource = getLocalStorage("currentSource") || "local";
+
+sourceBtns.forEach((b) => b.classList.remove("active"));
+if (currentSource === "local") btnLocal.classList.add("active");
+else if (currentSource === "airlabs") btnAirlabs.classList.add("active");
+else if (currentSource === "aviationstack") btnAviationStack.classList.add("active");
 
 function toggleLatLng() {
   showLatLng = !showLatLng;
   toggleLatLngBtn.textContent = showLatLng ? "Hide Lat/Lng" : "Show Lat/Lng";
+  setLocalStorage("showLatLng", showLatLng)
   refreshAllResults();
 }
 
@@ -70,6 +79,14 @@ function refreshAllResults() {
       }
     }
   });
+}
+
+
+if (savedSrcAirport) {
+  srcAirport = savedSrcAirport;
+  srcCountryInput.value = savedSrcAirport.country_code;
+  srcIataInput.value = savedSrcAirport.iata_code;
+  srcResult.innerHTML = formatAirportResult(savedSrcAirport);
 }
 
 // -------------------------------------------------------
@@ -162,6 +179,8 @@ sourceBtns.forEach((btn) => {
     if (btn === btnLocal) currentSource = "local";
     else if (btn === btnAirlabs) currentSource = "airlabs";
     else if (btn === btnAviationStack) currentSource = "aviationstack";
+
+    setLocalStorage("currentSource", currentSource);
   });
 });
 
@@ -198,9 +217,11 @@ async function lookupAirport(iataInput, countryInput, resultEl, distanceEl) {
       resultEl.innerHTML = formatAirportResult(airport);
       if (iataInput === srcIataInput) {
         srcAirport = airport;
+        setLocalStorage("srcAirport", srcAirport);
         updateAllDistances();
       } else {
-        updateDistance(airport, distanceEl);      }
+        updateDistance(airport, distanceEl);
+      }
 
     } else {
         resultEl.textContent = `No airport found for IATA code "${iata}" in country "${country}".`;
@@ -242,7 +263,7 @@ function updateAllDistances() {
 
 function createDstBlock(id) {
   const div = document.createElement("div");
-  div.classList.add("airport-lookup");
+  div.classList.add("airport-lookup", "dst-block");
   div.id = `dst-lookup-${id}`;
   div.innerHTML = `
     <h3>Destination Airport ${id}</h3>
@@ -261,6 +282,7 @@ function createDstBlock(id) {
   const lookupBtn = div.querySelector(".dst-lookup-btn");
   const resultEl = div.querySelector(".dst-airport-result");
   const distanceEl = div.querySelector(".distance-result");
+  const removeBtn = div.querySelector(".dst-remove-btn");
 
   lookupBtn.addEventListener("click", () =>
     lookupAirport(iataInput, countryInput, resultEl, distanceEl)
@@ -270,12 +292,10 @@ function createDstBlock(id) {
     if (e.key === "Enter") lookupAirport(iataInput, countryInput, resultEl, distanceEl)
   });
   
-  const removeBtn = div.querySelector(".dst-remove-btn");
-
   removeBtn.addEventListener("click", () => {
     div.remove();
   })
-  
+
   return div;
 }
 
@@ -303,13 +323,45 @@ dstIataInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") lookupAirport(dstIataInput, dstCountryInput, dstResult, distanceResult);
 });
 
-const srcRemoveBtn = document.querySelector("#src-remove-btn");
-
 srcRemoveBtn.addEventListener("click", () => {
   srcResult.textContent = "";
   srcAirport = null;
   srcIataInput.value = "";
   srcCountryInput.value = "US";
+  clearLocalStorage("srcAirport");
+  updateAllDistances();
+})
+
+clearStorageBtn.addEventListener("click", () => {
+  clearLocalStorage("currentSource");
+  clearLocalStorage("srcAirport");
+  clearLocalStorage("showLatLng");
+
+  currentSource = "local";
+  srcAirport = null;
+  showLatLng = true;
+
+  sourceBtns.forEach((b) => b.classList.remove("active"));
+  btnLocal.classList.add("active");
+
+  srcResult.textContent = "";
+  srcIataInput.value = "";
+  srcCountryInput.value = "US";
+
+  // Clear the first destination block
+  dstResult.textContent = "";
+  distanceResult.textContent = "";
+  dstIataInput.value = "";
+  dstCountryInput.value = "US";
+
+  // Clear any other destination blocks
+  document.querySelectorAll('.dst-block').forEach((block) => block.remove());
+  dstCounter = 1;
+
+  toggleLatLngBtn.textContent = "Hide Lat/Lng";
+
+  airportData = [];
+  dataSourceStatus.textContent = "";
   updateAllDistances();
 })
 
