@@ -41,6 +41,8 @@ let dstCounter = 1;
 let showLatLng = getLocalStorage("showLatLng") ?? true;
 let currentSource = getLocalStorage("currentSource") || "local";
 
+toggleLatLngBtn.textContent = showLatLng ? "Hide Lat/Lng" : "Show Lat/Lng";
+
 sourceBtns.forEach((b) => b.classList.remove("active"));
 if (currentSource === "local") btnLocal.classList.add("active");
 else if (currentSource === "airlabs") btnAirlabs.classList.add("active");
