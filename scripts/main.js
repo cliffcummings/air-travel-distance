@@ -6,13 +6,6 @@ const srcButton = document.querySelector("#src-lookup-btn");
 const srcResult = document.querySelector("#src-airport-result");
 const savedSrcAirport = getLocalStorage("srcAirport");
 
-const dstIataInput = document.querySelector("#dst-airport-code");
-const dstCountryInput = document.querySelector("#dst-country-code");
-const dstButton = document.querySelector("#dst-lookup-btn");
-const dstResult = document.querySelector("#dst-airport-result");
-
-const distanceResult = document.querySelector("#distance-result");
-
 const srcRemoveBtn = document.querySelector("#src-remove-btn");
 const addDstButton = document.querySelector("#add-dst-button");
 const dstColumn = document.querySelector("#dst-column");
@@ -37,7 +30,7 @@ const AVIATIONSTACK_KEY = "4d1a4a79c8c9c10e094019028275c0e7";
 
 let airportData = [];
 let srcAirport = null;
-let dstCounter = 1;
+let dstCounter = 0;
 let showLatLng = getLocalStorage("showLatLng") ?? true;
 let currentSource = getLocalStorage("currentSource") || "local";
 
@@ -82,7 +75,6 @@ function refreshAllResults() {
     }
   });
 }
-
 
 if (savedSrcAirport) {
   srcAirport = savedSrcAirport;
@@ -233,13 +225,52 @@ async function lookupAirport(iataInput, countryInput, resultEl, distanceEl) {
   }
 }
 
+// -------------------------------------------------------
+// Distance calculation and display
+// -------------------------------------------------------
+
 function updateDistance(dstAirport, distanceEl) {
   if (srcAirport && dstAirport) {
     const miles = calcDistance(
       srcAirport.lat, srcAirport.lng,
       dstAirport.lat, dstAirport.lng
     );
-    distanceEl.textContent = `Distance from ${srcAirport.iata_code} to ${dstAirport.iata_code}: ${miles} miles`;
+    distanceEl.dataset.miles = miles;
+    distanceEl.dataset.src = srcAirport.iata_code;
+    distanceEl.dataset.dst = dstAirport.iata_code;
+    updateDistanceDisplay(distanceEl)
+  }
+}
+
+function updateDistanceDisplay(distanceEl) {
+  const oneWay = parseFloat(distanceEl.dataset.miles);
+  if (isNaN(oneWay)) return;
+
+  const src = distanceEl.dataset.src;
+  const dst = distanceEl.dataset.dst;
+
+  const block = distanceEl.closest(".airport-lookup");
+  const rtBtn = block?.querySelector(".rt-btn");
+  const hotelInput = block?.querySelector(".hotel-price-input");
+  const priceInput = block?.querySelector(".ticket-price-input");
+  const priceResult = block?.querySelector(".price-per-mile-result");
+
+  const isRT = rtBtn?.classList.contains("active") ?? false;
+  const displayMiles = isRT ? (oneWay * 2).toFixed(0) : oneWay.toFixed(0);
+  const label = isRT ? "Round Trip" : "One Way";
+
+  distanceEl.textContent = `Distance from ${src} to ${dst}: ${displayMiles} miles (${label})`;
+  const totalPrice = (parseFloat(hotelInput?.value) || 0) + (parseFloat(priceInput.value) || 0);
+  updatePricePerMile(priceResult, totalPrice, parseFloat(displayMiles));
+}
+
+function updatePricePerMile(priceResult, totalPrice, totalMiles) {
+  if (!priceResult) return;
+  if ((totalPrice > 0) && (totalMiles > 0)) {
+    const cpp = ((totalPrice / totalMiles) * 100).toFixed(1);
+    priceResult.textContent = `Price per mile: ${cpp}¢`;
+  } else {
+    priceResult.textContent = "";
   }
 }
 
@@ -256,12 +287,18 @@ function updateAllDistances() {
         updateDistance(airport, distanceEl);
       } else {
         distanceEl.textContent = "";
+        delete distanceEl.dataset.miles;
       }
     } else {
       distanceEl.textContent = "";
+      delete distanceEl.dataset.miles;
     }
   });
 }
+
+// -------------------------------------------------------
+// Desitnation block builder - used for all dst blocks
+// -------------------------------------------------------
 
 function createDstBlock(id) {
   const div = document.createElement("div");
@@ -271,12 +308,27 @@ function createDstBlock(id) {
     <h3>Destination Airport ${id}</h3>
     <label>Enter 2-Letter Country Code (US is default):</label>
     <input type="text" class="dst-country-input" maxlength="2" placeholder="e.g. US" value="US"/>
+
     <label>Enter 3-Letter Airport Code:</label>
     <input type="text" class="dst-iata-input" maxlength="3" placeholder="e.g. LAX" />
+
     <button type="button" class="dst-lookup-btn">Look Up</button>
+    <button type="button" class="rt-btn" title="Toggle Round Tripe">RT</button>
     <button type="button" class="dst-remove-btn">Remove</button>
+
     <p class="dst-airport-result"></p>
     <p class="distance-result"></p>
+    <div class="price-section">
+      <div class="price-row">
+        <label>Hotel Price ($):</label>
+        <input type="number" class="hotel-price-input" min="0" step="1" placeholder="0" value="0" />
+      </div>
+      <div class="price-row">
+        <label>Ticket Price ($):</label>
+        <input type="number" class="ticket-price-input" min="0" step="1" placeholder="e.g. 425" />
+        <span class="price-per-mile-result"></span>
+      </div>
+    </div>
   `;
 
   const iataInput = div.querySelector(".dst-iata-input");
@@ -285,6 +337,9 @@ function createDstBlock(id) {
   const resultEl = div.querySelector(".dst-airport-result");
   const distanceEl = div.querySelector(".distance-result");
   const removeBtn = div.querySelector(".dst-remove-btn");
+  const rtBtn = div.querySelector(".rt-btn");
+  const priceInput = div.querySelector(".ticket-price-input");
+  const priceResult = div.querySelector(".price-per-mile-result");
 
   lookupBtn.addEventListener("click", () =>
     lookupAirport(iataInput, countryInput, resultEl, distanceEl)
@@ -294,35 +349,67 @@ function createDstBlock(id) {
     if (e.key === "Enter") lookupAirport(iataInput, countryInput, resultEl, distanceEl)
   });
   
+  rtBtn.addEventListener("click", () => {
+    rtBtn.classList.toggle("active");
+    updateDistanceDisplay(distanceEl);
+  });
+
+  const hotelInput = div.querySelector(".hotel-price-input");
+
+  function getTotalPrice() {
+    return (parseFloat(hotelInput.value) || 0) + (parseFloat(priceInput.value) || 0);
+  };
+
+  hotelInput.addEventListener("input", () => {
+    const miles = parseFloat(distanceEl.dataset.miles);
+    if (isNaN(miles)) return;
+    const isRT = rtBtn.classList.contains("active");
+    const displayMiles = isRT ? miles * 2 : miles;
+    updatePricePerMile(priceResult, getTotalPrice(), displayMiles);
+  });
+
+  priceInput.addEventListener("input", () => {
+    const miles = parseFloat(distanceEl.dataset.miles);
+    if (isNaN(miles)) return;
+    const isRT = rtBtn.classList.contains("active");
+    const displayMiles = isRT ? miles * 2 : miles;
+    updatePricePerMile(priceResult, getTotalPrice(), displayMiles);
+  });
+
   removeBtn.addEventListener("click", () => {
     div.remove();
-  })
+  });
 
   return div;
-}
+};
 
-addDstButton.addEventListener("click", () => {
+function addDstBlock() {
   dstCounter++;
   const newBlock = createDstBlock(dstCounter);
   dstColumn.insertBefore(newBlock, addDstButton);
-});
+  return newBlock;
+};
+
+// -------------------------------------------------------
+// Initialize first destination block on page load
+// -------------------------------------------------------
+
+addDstBlock();
+
+// -------------------------------------------------------
+// Top-level event listeners
+// -------------------------------------------------------
+
+addDstButton.addEventListener("click", addDstBlock);
 
 srcButton.addEventListener("click", () =>
   lookupAirport(srcIataInput, srcCountryInput, srcResult, null)
-);
-
-dstButton.addEventListener("click", () =>
-  lookupAirport(dstIataInput, dstCountryInput, dstResult, distanceResult)
 );
 
 toggleLatLngBtn.addEventListener("click", toggleLatLng);
 
 srcIataInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") lookupAirport(srcIataInput, srcCountryInput, srcResult, null);
-});
-
-dstIataInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") lookupAirport(dstIataInput, dstCountryInput, dstResult, distanceResult);
 });
 
 srcRemoveBtn.addEventListener("click", () => {
@@ -350,15 +437,10 @@ clearStorageBtn.addEventListener("click", () => {
   srcIataInput.value = "";
   srcCountryInput.value = "US";
 
-  // Clear the first destination block
-  dstResult.textContent = "";
-  distanceResult.textContent = "";
-  dstIataInput.value = "";
-  dstCountryInput.value = "US";
-
-  // Clear any other destination blocks
+  // Remove all destination blocks and restart with one
   document.querySelectorAll('.dst-block').forEach((block) => block.remove());
-  dstCounter = 1;
+  dstCounter = 0;
+  addDstBlock();
 
   toggleLatLngBtn.textContent = "Hide Lat/Lng";
 

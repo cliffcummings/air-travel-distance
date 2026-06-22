@@ -9,12 +9,17 @@
     --sunburst_red: #CC0000;
     --text_white: #ffffff;
     --contact1: #ffff00;
-    --contact2: #addae6;}
+    --contact2: #addae6;
+    --control-font-size: 0.9rem;
+    --control-padding: 0.375rem 0.625rem;
+    --control-border: 1px solid var(--back_color3);
+    --control-radius: 0.25rem;
+}
 
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* white background in the header and body */
@@ -25,7 +30,7 @@ header {
     max-width: 1000px;
     background-color: var(--back_color3);
     padding: 1rem;
-    color: white;
+    color: var(--text_white);
     text-align: center;
 }
 
@@ -42,6 +47,15 @@ main {
     min-width: 400px;
     width: 100%;
 }
+
+h3 {
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--back_color2);
+}
+
+/* DATA SOURCE */
 
 #data-source {
     margin-bottom: 1rem;
@@ -60,30 +74,107 @@ main {
     color: var(--text_white);
 }
 
+/* AIRPORT COLUMNS */
+
 .airport-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.airport-lookup label {
+.airport-lookup label:not(.price-row label) {
     display: block;
     margin-top: 0.5rem;
 }
 
 #src-country-code,
 #src-airport-code,
-#dst-country-code,
-#dst-airport-code,
 .dst-country-input,
 .dst-iata-input {
     text-transform: uppercase;
+}
+
+#src-country-code,
+#src-airport-code,
+.dst-country-input,
+.dst-iata-input,
+.ticket-price-input,
+.hotel-price-input {
+    width: 5rem;
+}
+
+/* UTILITY BUTTONS */
+
+button:not(.source-btn),
+input[type="text"],
+input[type="number"] {
+    margin: 0.25rem;
+    padding: var(--control-padding);
+    font-size: var(--control-font-size);
+    border: var(--control-border);
+    border-radius: var(--control-radius);
 }
 
 #toggle-latlong-btn,
 #clear-storage-btn {
     background-color: var(--contact1);
 }
+
+/* RT (ROUND TRIP) BUTTON */
+
+.rt-btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--back_color3);
+    background-color: var(--accent_color3);
+}
+
+.rt-btn.active {
+    background-color: var(--back_color2);
+    color: var(--text_white);
+    border-color: var(--back_color1);
+}
+
+/* PRICE SECTION */
+
+.price-section {
+    margin: 0.25rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--accent_color2);
+    border-bottom: 1px solid var(--back_color1);
+}
+
+.price-section label {
+    margin-bottom: 0.25rem;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.price-per-mile-result {
+    font-size: 0.9rem;
+    color: var(--back_color2);
+    font-style: italic;
+}
+
+/* Rules for Chrome/Safari/Edge */
+.ticket-price-input::-webkit-outer-spin-button,
+.ticket-price-input::-webkit-inner-spin-button,
+.hotel-price-input::-webkit-outer-spin-button,
+.hotel-price-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Rule for Firefox */
+.ticket-price-input[type="number"],
+.hotel-price-input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* JSON HTML PAGE */
 
 #json-display {
     white-space: pre-wrap;
@@ -93,16 +184,6 @@ main {
     border: 1px solid var(--back_color2);
 }
 
-button {
-    margin: 0.25rem;
-}
-
-ul {
-    list-style-type: none;
-    margin-top: 0;
-    margin-right: 2rem;
-}
-
 /* FOOTER CONTENT */
 
 footer {
@@ -110,10 +191,10 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    color: white;
+    color: var(--text_white);
     background-color: var(--back_color3);
     text-align: center;
-    min-width: 400px;
+    min-width: 25rem;
 }
 
 .banner {
@@ -170,12 +251,13 @@ footer .banner p {
     margin: 0;
 }
 
-h3 {
-    margin: 0.5rem;
-    font-size: 1rem;
-    text-align: center;
-    color: var(--back_color2);
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-right: 2rem;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 600px) {
     .airport-columns {
