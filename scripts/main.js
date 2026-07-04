@@ -87,7 +87,7 @@ if (savedSrcAirport) {
 // Data source conversion functions
 // -------------------------------------------------------
 
-// Local UsAirports.json format - already in correct format
+// Local App Airports.json format - already in correct format
 function convertLocalFormat(airport) {
   return {
     name: airport.name,
