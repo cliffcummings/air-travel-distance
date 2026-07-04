@@ -36,15 +36,9 @@
         "lng": -111.6442,
         "timezone": "America/Denver"
       },
-      "connection": {
-
-      },
-      "device": {
-
-      },
-      "agent": {
-
-      },
+      "connection": {},
+      "device": {},
+      "agent": {},
       "karma": {
         "is_blocked": false,
         "is_crawler": false,
@@ -55,86 +49,6 @@
     }
   },
   "response": [
-    {
-      "name": "A L Mangham Jr. Regional Airport",
-      "iata_code": "OCH",
-      "icao_code": "KOCH",
-      "lat": 31.57788,
-      "lng": -94.70668,
-      "country_code": "US"
-    },
-    {
-      "name": "A P Hill Army Airfield (Fort A P Hill)",
-      "iata_code": "APH",
-      "icao_code": "KAPH",
-      "lat": 38.06968,
-      "lng": -77.31809,
-      "country_code": "US"
-    },
-    {
-      "name": "Aban Uqua Airportse",
-      "iata_code": "QKA",
-      "icao_code": "KQKA",
-      "lat": -14.735092,
-      "lng": -91.112751,
-      "country_code": "US"
-    },
-    {
-      "name": "Abbeville Chris Crusta Memorial Airport",
-      "iata_code": null,
-      "icao_code": "KIYA",
-      "lat": 29.97161,
-      "lng": -92.0847,
-      "country_code": "US"
-    },
-    {
-      "name": "Aberdeen Regional Airport",
-      "iata_code": "ABR",
-      "icao_code": "KABR",
-      "lat": 45.4497,
-      "lng": -98.42148,
-      "country_code": "US"
-    },
-    {
-      "name": "Abernathy Field",
-      "iata_code": null,
-      "icao_code": "KGZS",
-      "lat": 35.15062,
-      "lng": -87.05316,
-      "country_code": "US"
-    },
-    {
-      "name": "Abilene Regional Airport",
-      "iata_code": "ABI",
-      "icao_code": "KABI",
-      "lat": 32.41124,
-      "lng": -99.68203,
-      "country_code": "US"
-    },
-    {
-      "name": "Abraham Lincoln Capital Airport",
-      "iata_code": "SPI",
-      "icao_code": "KSPI",
-      "lat": 39.8441,
-      "lng": -89.67789,
-      "country_code": "US"
-    },
-    {
-      "name": "Acadiana Regional Airport",
-      "iata_code": "ARA",
-      "icao_code": "KARA",
-      "lat": 30.0377,
-      "lng": -91.88373,
-      "country_code": "US"
-    },
-    {
-      "name": "Accomack County Airport",
-      "iata_code": "MFV",
-      "icao_code": "KFMV",
-      "lat": 37.64318,
-      "lng": -75.76106,
-      "country_code": "US"
-    },
     {
       "name": "Ada Municipal Airport",
       "iata_code": "ADT",
@@ -184,27 +98,11 @@
       "country_code": "US"
     },
     {
-      "name": "Aeroflex-Andover Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 41.0089,
-      "lng": -74.73791,
-      "country_code": "US"
-    },
-    {
       "name": "Afton Municipal Airport",
       "iata_code": "AFO",
       "icao_code": "KAFO",
       "lat": 42.70924,
       "lng": -110.94075,
-      "country_code": "US"
-    },
-    {
-      "name": "Ahoskie, Tri-County Airport",
-      "iata_code": null,
-      "icao_code": "KASJ",
-      "lat": 36.2975,
-      "lng": -77.17083,
       "country_code": "US"
     },
     {
@@ -221,62 +119,6 @@
       "icao_code": "KANW",
       "lat": 42.57917,
       "lng": -99.99318,
-      "country_code": "US"
-    },
-    {
-      "name": "Airglades Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 26.735195,
-      "lng": -81.051078,
-      "country_code": "US"
-    },
-    {
-      "name": "Airlake Airport",
-      "iata_code": null,
-      "icao_code": "KLVN",
-      "lat": 44.62785,
-      "lng": -93.22811,
-      "country_code": "US"
-    },
-    {
-      "name": "Aitkin Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KAIT",
-      "lat": 46.54746,
-      "lng": -93.67691,
-      "country_code": "US"
-    },
-    {
-      "name": "AJ Eisenberg Airport",
-      "iata_code": "ODW",
-      "icao_code": "KOKH",
-      "lat": 48.25154,
-      "lng": -122.67814,
-      "country_code": "US"
-    },
-    {
-      "name": "Akhiok Airport",
-      "iata_code": "AKK",
-      "icao_code": "PAKH",
-      "lat": 56.94003,
-      "lng": -154.18083,
-      "country_code": "US"
-    },
-    {
-      "name": "Akiachak Airport",
-      "iata_code": "KKI",
-      "icao_code": null,
-      "lat": 60.90623,
-      "lng": -161.42742,
-      "country_code": "US"
-    },
-    {
-      "name": "Akiak Airport",
-      "iata_code": "AKI",
-      "icao_code": "PFAK",
-      "lat": 60.90481,
-      "lng": -161.22702,
       "country_code": "US"
     },
     {
@@ -344,22 +186,6 @@
       "country_code": "US"
     },
     {
-      "name": "Albany Naval Air Station (historical)",
-      "iata_code": "NAB",
-      "icao_code": null,
-      "lat": 31.59778,
-      "lng": -84.08917,
-      "country_code": "US"
-    },
-    {
-      "name": "Albert J Ellis Airport",
-      "iata_code": "OAJ",
-      "icao_code": "KOAJ",
-      "lat": 34.83051,
-      "lng": -77.60609,
-      "country_code": "US"
-    },
-    {
       "name": "Albert Lea Municipal Airport",
       "iata_code": "AEL",
       "icao_code": "KAEL",
@@ -384,30 +210,6 @@
       "country_code": "US"
     },
     {
-      "name": "Albertville Regional Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 34.22889,
-      "lng": -86.25556,
-      "country_code": "US"
-    },
-    {
-      "name": "Albion Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KBVN",
-      "lat": 41.72918,
-      "lng": -98.05617,
-      "country_code": "US"
-    },
-    {
-      "name": "ALBUQUERQUE (ARTCC),NM.",
-      "iata_code": null,
-      "icao_code": "KZAB",
-      "lat": 35.05,
-      "lng": 106.6,
-      "country_code": "US"
-    },
-    {
       "name": "Albuquerque International Airport",
       "iata_code": "ABQ",
       "icao_code": "KABQ",
@@ -416,43 +218,11 @@
       "country_code": "US"
     },
     {
-      "name": "Aleknagik /New Airport",
-      "iata_code": "WKK",
-      "icao_code": null,
-      "lat": 59.28256,
-      "lng": -158.61767,
-      "country_code": "US"
-    },
-    {
-      "name": "Aleneva Airport",
-      "iata_code": "AED",
-      "icao_code": null,
-      "lat": 58.03333,
-      "lng": -152.89999,
-      "country_code": "US"
-    },
-    {
       "name": "Alexander Field South Wood County Airport",
       "iata_code": "ISW",
       "icao_code": "KISW",
       "lat": 44.36082,
       "lng": -89.83277,
-      "country_code": "US"
-    },
-    {
-      "name": "Alexander Salamon Airport",
-      "iata_code": null,
-      "icao_code": "KAMT",
-      "lat": 38.8549,
-      "lng": -83.56348,
-      "country_code": "US"
-    },
-    {
-      "name": "Alexandria Esler Regional Airport",
-      "iata_code": "ESF",
-      "icao_code": "KESF",
-      "lat": 31.3949,
-      "lng": -92.29569,
       "country_code": "US"
     },
     {
@@ -480,22 +250,6 @@
       "country_code": "US"
     },
     {
-      "name": "Alitak Seaplane Base",
-      "iata_code": "ALZ",
-      "icao_code": null,
-      "lat": 56.89839,
-      "lng": -154.24766,
-      "country_code": "US"
-    },
-    {
-      "name": "Allakaket Airport",
-      "iata_code": "AET",
-      "icao_code": "PFAL",
-      "lat": 66.54959,
-      "lng": -152.63136,
-      "country_code": "US"
-    },
-    {
       "name": "Allegheny County Airport",
       "iata_code": "AGC",
       "icao_code": "KAGC",
@@ -520,30 +274,6 @@
       "country_code": "US"
     },
     {
-      "name": "Allen Parish Airport",
-      "iata_code": null,
-      "icao_code": "KACP",
-      "lat": 30.75056,
-      "lng": -92.68861,
-      "country_code": "US"
-    },
-    {
-      "name": "Allendale County Airport",
-      "iata_code": null,
-      "icao_code": "KAQX",
-      "lat": 32.995098,
-      "lng": -81.270203,
-      "country_code": "US"
-    },
-    {
-      "name": "Allentown Queen City Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KXLL",
-      "lat": 40.57384,
-      "lng": -75.48817,
-      "country_code": "US"
-    },
-    {
       "name": "Alliance Municipal Airport",
       "iata_code": "AIA",
       "icao_code": "KAIA",
@@ -560,38 +290,6 @@
       "country_code": "US"
     },
     {
-      "name": "Alpine Airstrip",
-      "iata_code": null,
-      "icao_code": "PALP",
-      "lat": 70.33333,
-      "lng": -150.93333,
-      "country_code": "US"
-    },
-    {
-      "name": "Alpine - Casparis Municipal Airport",
-      "iata_code": "ALE",
-      "icao_code": null,
-      "lat": 30.38794,
-      "lng": -103.67662,
-      "country_code": "US"
-    },
-    {
-      "name": "Altoona-Blair County Airport",
-      "iata_code": "AOO",
-      "icao_code": "KAOO",
-      "lat": 40.29619,
-      "lng": -78.32001,
-      "country_code": "US"
-    },
-    {
-      "name": "Alturas Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KAAT",
-      "lat": 41.48267,
-      "lng": -120.56635,
-      "country_code": "US"
-    },
-    {
       "name": "Altus Air Force Base",
       "iata_code": "LTS",
       "icao_code": "KLTS",
@@ -605,14 +303,6 @@
       "icao_code": "KAXS",
       "lat": 34.69812,
       "lng": -99.3387,
-      "country_code": "US"
-    },
-    {
-      "name": "Alva Regional Airport",
-      "iata_code": null,
-      "icao_code": "KAVK",
-      "lat": 36.77309,
-      "lng": -98.67009,
       "country_code": "US"
     },
     {
@@ -648,22 +338,6 @@
       "country_code": "US"
     },
     {
-      "name": "Amook Bay Seaplane Base",
-      "iata_code": "AOS",
-      "icao_code": null,
-      "lat": 57.47161,
-      "lng": -153.81542,
-      "country_code": "US"
-    },
-    {
-      "name": "Anacortes Airport",
-      "iata_code": "OTS",
-      "icao_code": null,
-      "lat": 48.49809,
-      "lng": -122.66147,
-      "country_code": "US"
-    },
-    {
       "name": "Anaktuvuk Pass Airport",
       "iata_code": "AKP",
       "icao_code": "PAKP",
@@ -680,35 +354,11 @@
       "country_code": "US"
     },
     {
-      "name": "Andalusia, Andalusia-Opp Municipal Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 31.30833,
-      "lng": -86.39222,
-      "country_code": "US"
-    },
-    {
-      "name": "Anderson County Airport",
-      "iata_code": "AND",
-      "icao_code": "KAND",
-      "lat": 34.49483,
-      "lng": -82.70875,
-      "country_code": "US"
-    },
-    {
       "name": "Anderson Municipal Airport",
       "iata_code": "AID",
       "icao_code": "KAID",
       "lat": 40.10893,
       "lng": -85.61581,
-      "country_code": "US"
-    },
-    {
-      "name": "Andrew Othole Memorial Airport",
-      "iata_code": null,
-      "icao_code": "KXNI",
-      "lat": 35.060675,
-      "lng": -108.9376,
       "country_code": "US"
     },
     {
@@ -744,30 +394,6 @@
       "country_code": "US"
     },
     {
-      "name": "Animas Air Park",
-      "iata_code": "AMK",
-      "icao_code": null,
-      "lat": 37.20318,
-      "lng": -107.8692,
-      "country_code": "US"
-    },
-    {
-      "name": "Ankeny Regional Airport",
-      "iata_code": "QQK",
-      "icao_code": "KIKV",
-      "lat": 41.695,
-      "lng": -93.5687,
-      "country_code": "US"
-    },
-    {
-      "name": "Ankeny Regional Airport",
-      "iata_code": null,
-      "icao_code": "KIKV",
-      "lat": 41.695,
-      "lng": -93.5687,
-      "country_code": "US"
-    },
-    {
       "name": "Ann Arbor Municipal",
       "iata_code": "ARB",
       "icao_code": "KARB",
@@ -800,51 +426,11 @@
       "country_code": "US"
     },
     {
-      "name": "Anoka County Airport",
-      "iata_code": null,
-      "icao_code": "KANE",
-      "lat": 45.14469,
-      "lng": -93.21106,
-      "country_code": "US"
-    },
-    {
-      "name": "Anson County Airport",
-      "iata_code": null,
-      "icao_code": "KAFP",
-      "lat": 35.02404,
-      "lng": -80.07867,
-      "country_code": "US"
-    },
-    {
-      "name": "Anthony Medical Center Heliport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 37.1557,
-      "lng": -98.01761,
-      "country_code": "US"
-    },
-    {
       "name": "Anthony Municipal Airport",
       "iata_code": "ANY",
       "icao_code": "KANY",
       "lat": 37.15447,
       "lng": -98.07772,
-      "country_code": "US"
-    },
-    {
-      "name": "Antlers Municipal Airport",
-      "iata_code": "ATE",
-      "icao_code": null,
-      "lat": 34.19156,
-      "lng": -95.65138,
-      "country_code": "US"
-    },
-    {
-      "name": "Antrim County Airport",
-      "iata_code": "ACB",
-      "icao_code": "KACB",
-      "lat": 44.98834,
-      "lng": -85.19839,
       "country_code": "US"
     },
     {
@@ -880,14 +466,6 @@
       "country_code": "US"
     },
     {
-      "name": "Appleton Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KAQP",
-      "lat": 45.22774,
-      "lng": -96.0056,
-      "country_code": "US"
-    },
-    {
       "name": "Aransas County Airport",
       "iata_code": "RKP",
       "icao_code": "KRKP",
@@ -904,30 +482,6 @@
       "country_code": "US"
     },
     {
-      "name": "Arapahoe Municipal Airport",
-      "iata_code": "AHF",
-      "icao_code": null,
-      "lat": 40.33945,
-      "lng": -99.90651,
-      "country_code": "US"
-    },
-    {
-      "name": "Arcata-Eureka Airport",
-      "iata_code": "ACV",
-      "icao_code": "KACV",
-      "lat": 40.97164,
-      "lng": -124.10709,
-      "country_code": "US"
-    },
-    {
-      "name": "Arco Butte County Airport",
-      "iata_code": null,
-      "icao_code": "KAOC",
-      "lat": 43.6035,
-      "lng": -113.334,
-      "country_code": "US"
-    },
-    {
       "name": "Arctic Village Airport",
       "iata_code": "ARC",
       "icao_code": "PARC",
@@ -936,67 +490,11 @@
       "country_code": "US"
     },
     {
-      "name": "Ardmore Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 34.97872,
-      "lng": -86.88273,
-      "country_code": "US"
-    },
-    {
-      "name": "Ardmore Downtown Executive Airport",
-      "iata_code": "AHD",
-      "icao_code": null,
-      "lat": 34.1506,
-      "lng": -97.12114,
-      "country_code": "US"
-    },
-    {
-      "name": "Ardmore Municipal Airport",
-      "iata_code": "ADM",
-      "icao_code": "KADM",
-      "lat": 34.30231,
-      "lng": -97.0189,
-      "country_code": "US"
-    },
-    {
-      "name": "Arens Field",
-      "iata_code": null,
-      "icao_code": "KRWN",
-      "lat": 41.09331,
-      "lng": -86.60419,
-      "country_code": "US"
-    },
-    {
       "name": "Arkansas International Airport",
       "iata_code": "BYH",
       "icao_code": "KBYH",
       "lat": 35.95956,
       "lng": -89.94904,
-      "country_code": "US"
-    },
-    {
-      "name": "Arlington Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KAWO",
-      "lat": 48.16065,
-      "lng": -122.15847,
-      "country_code": "US"
-    },
-    {
-      "name": "Arlington Municipal Airport",
-      "iata_code": "QQG",
-      "icao_code": "KGKY",
-      "lat": 32.66374,
-      "lng": -97.09445,
-      "country_code": "US"
-    },
-    {
-      "name": "Arlington Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KGKY",
-      "lat": 32.66374,
-      "lng": -97.09445,
       "country_code": "US"
     },
     {
@@ -1021,62 +519,6 @@
       "icao_code": "KATS",
       "lat": 32.85233,
       "lng": -104.46746,
-      "country_code": "US"
-    },
-    {
-      "name": "Arthur Dunn Air Park",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 28.62278,
-      "lng": -80.8333,
-      "country_code": "US"
-    },
-    {
-      "name": "Arthur N Neu Airport",
-      "iata_code": "CIN",
-      "icao_code": "KCIN",
-      "lat": 42.04693,
-      "lng": -94.78998,
-      "country_code": "US"
-    },
-    {
-      "name": "Ashe County Airport",
-      "iata_code": null,
-      "icao_code": "KGEV",
-      "lat": 36.43146,
-      "lng": -81.42192,
-      "country_code": "US"
-    },
-    {
-      "name": "Asheboro Regional Airport",
-      "iata_code": null,
-      "icao_code": "KHBI",
-      "lat": 35.65444,
-      "lng": -79.89472,
-      "country_code": "US"
-    },
-    {
-      "name": "Asheville Regional Airport",
-      "iata_code": "AVL",
-      "icao_code": "KAVL",
-      "lat": 35.43733,
-      "lng": -82.53895,
-      "country_code": "US"
-    },
-    {
-      "name": "Ashland Municipal Airport-Sumner Parker Field",
-      "iata_code": "AHM",
-      "icao_code": null,
-      "lat": 42.18836,
-      "lng": -122.65749,
-      "country_code": "US"
-    },
-    {
-      "name": "Ashland Regional Airport",
-      "iata_code": null,
-      "icao_code": "KDWU",
-      "lat": 38.5545,
-      "lng": -82.738,
       "country_code": "US"
     },
     {
@@ -1136,30 +578,6 @@
       "country_code": "US"
     },
     {
-      "name": "ATLANTA AWP,GA.",
-      "iata_code": null,
-      "icao_code": "KZWT",
-      "lat": 33.638055,
-      "lng": 84.427778,
-      "country_code": "US"
-    },
-    {
-      "name": "Atlanta Regional Airport",
-      "iata_code": null,
-      "icao_code": "KFFC",
-      "lat": 33.35706,
-      "lng": -84.57215,
-      "country_code": "US"
-    },
-    {
-      "name": "Atlantic City International Airport",
-      "iata_code": "ACY",
-      "icao_code": "KACY",
-      "lat": 39.45762,
-      "lng": -74.57654,
-      "country_code": "US"
-    },
-    {
       "name": "Atlantic Municipal Airport",
       "iata_code": "AIO",
       "icao_code": "KAIO",
@@ -1168,35 +586,11 @@
       "country_code": "US"
     },
     {
-      "name": "Atmautluak Airport",
-      "iata_code": "ATT",
-      "icao_code": null,
-      "lat": 60.86675,
-      "lng": -162.27314,
-      "country_code": "US"
-    },
-    {
-      "name": "Atoka Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KAQR",
-      "lat": 34.39526,
-      "lng": -96.14865,
-      "country_code": "US"
-    },
-    {
       "name": "Atqasuk Edward Burnell Sr. Memorial Airport",
       "iata_code": "ATK",
       "icao_code": "PATQ",
       "lat": 70.46802,
       "lng": -157.43134,
-      "country_code": "US"
-    },
-    {
-      "name": "Atwood-Rawlins County City-County Airport",
-      "iata_code": null,
-      "icao_code": "KADT",
-      "lat": 39.83784,
-      "lng": -101.04387,
       "country_code": "US"
     },
     {
@@ -1224,22 +618,6 @@
       "country_code": "US"
     },
     {
-      "name": "Audubon County Airport",
-      "iata_code": null,
-      "icao_code": "KADU",
-      "lat": 41.70138,
-      "lng": -94.92054,
-      "country_code": "US"
-    },
-    {
-      "name": "Augusta Regional Airport",
-      "iata_code": "AGS",
-      "icao_code": "KAGS",
-      "lat": 33.36986,
-      "lng": -81.96428,
-      "country_code": "US"
-    },
-    {
       "name": "Augusta State Airport",
       "iata_code": "AUG",
       "icao_code": "KAUG",
@@ -1248,43 +626,11 @@
       "country_code": "US"
     },
     {
-      "name": "Aurora Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KAUH",
-      "lat": 40.8939,
-      "lng": -97.99478,
-      "country_code": "US"
-    },
-    {
-      "name": "Aurora State Airport",
-      "iata_code": null,
-      "icao_code": "KUAO",
-      "lat": 45.24969,
-      "lng": -122.76968,
-      "country_code": "US"
-    },
-    {
       "name": "Austin-Bergstrom International Airport",
       "iata_code": "AUS",
       "icao_code": "KAUS",
       "lat": 30.19453,
       "lng": -97.66987,
-      "country_code": "US"
-    },
-    {
-      "name": "Austin Executive Airport",
-      "iata_code": "EDC",
-      "icao_code": "KEDC",
-      "lat": 30.39661,
-      "lng": -97.56725,
-      "country_code": "US"
-    },
-    {
-      "name": "Austin Executive Airport",
-      "iata_code": "EDC",
-      "icao_code": "KEDC",
-      "lat": 30.39661,
-      "lng": -97.56725,
       "country_code": "US"
     },
     {
@@ -1312,14 +658,6 @@
       "country_code": "US"
     },
     {
-      "name": "Ava Bill Martin Memorial Airport",
-      "iata_code": null,
-      "icao_code": "KAOV",
-      "lat": 36.971901,
-      "lng": -92.6819,
-      "country_code": "US"
-    },
-    {
       "name": "Avenger Field",
       "iata_code": "SWW",
       "icao_code": "KSWW",
@@ -1333,46 +671,6 @@
       "icao_code": "KAVO",
       "lat": 27.59444,
       "lng": -81.52626,
-      "country_code": "US"
-    },
-    {
-      "name": "B. J. Mc Combs Sisterdale Airport (private)",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 29.97605,
-      "lng": -98.74364,
-      "country_code": "US"
-    },
-    {
-      "name": "Bacon County Airport",
-      "iata_code": null,
-      "icao_code": "KAMG",
-      "lat": 31.53604,
-      "lng": -82.50652,
-      "country_code": "US"
-    },
-    {
-      "name": "Badami Airport",
-      "iata_code": null,
-      "icao_code": "PABP",
-      "lat": 70.1374969482,
-      "lng": -147.0299987793,
-      "country_code": "US"
-    },
-    {
-      "name": "Bagdad Airport",
-      "iata_code": "BGT",
-      "icao_code": null,
-      "lat": 34.5948,
-      "lng": -113.16889,
-      "country_code": "US"
-    },
-    {
-      "name": "Baker Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KBHK",
-      "lat": 46.35834,
-      "lng": -104.25077,
       "country_code": "US"
     },
     {
@@ -1392,27 +690,11 @@
       "country_code": "US"
     },
     {
-      "name": "Balloonport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 37.09447,
-      "lng": -97.96145,
-      "country_code": "US"
-    },
-    {
       "name": "Baltimore-Washington International Airport",
       "iata_code": "BWI",
       "icao_code": "KBWI",
       "lat": 39.17539,
       "lng": -76.66802,
-      "country_code": "US"
-    },
-    {
-      "name": "Bandon State Airport",
-      "iata_code": "BDY",
-      "icao_code": null,
-      "lat": 43.0838,
-      "lng": -124.40936,
       "country_code": "US"
     },
     {
@@ -1448,43 +730,11 @@
       "country_code": "US"
     },
     {
-      "name": "Barksdale Air Force Base",
-      "iata_code": "BAD",
-      "icao_code": "KBAD",
-      "lat": 32.49696,
-      "lng": -93.66762,
-      "country_code": "US"
-    },
-    {
-      "name": "Barnstable Municipal Airport-Boardman/Polando Field",
-      "iata_code": "HYA",
-      "icao_code": "KHYA",
-      "lat": 41.66733,
-      "lng": -70.28741,
-      "country_code": "US"
-    },
-    {
       "name": "Barnwell Regional Airport",
       "iata_code": "BNL",
       "icao_code": "KBNL",
       "lat": 33.25955,
       "lng": -81.38083,
-      "country_code": "US"
-    },
-    {
-      "name": "Barrow County Airport",
-      "iata_code": "WDR",
-      "icao_code": "KWDR",
-      "lat": 33.98292,
-      "lng": -83.67016,
-      "country_code": "US"
-    },
-    {
-      "name": "Barstow Daggett County Airport",
-      "iata_code": "DAG",
-      "icao_code": "KDAG",
-      "lat": 34.8536,
-      "lng": -116.78753,
       "country_code": "US"
     },
     {
@@ -1504,27 +754,11 @@
       "country_code": "US"
     },
     {
-      "name": "Bartlett Cove Seaplane Base",
-      "iata_code": "BQV",
-      "icao_code": null,
-      "lat": 58.45533,
-      "lng": -135.88499,
-      "country_code": "US"
-    },
-    {
       "name": "Bartow Municipal Airport",
       "iata_code": "BOW",
       "icao_code": "KBOW",
       "lat": 27.94364,
       "lng": -81.78314,
-      "country_code": "US"
-    },
-    {
-      "name": "Basset Helipad",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 42.68928,
-      "lng": -74.92141,
       "country_code": "US"
     },
     {
@@ -1560,14 +794,6 @@
       "country_code": "US"
     },
     {
-      "name": "Baxley Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KBHC",
-      "lat": 31.71302,
-      "lng": -82.39178,
-      "country_code": "US"
-    },
-    {
       "name": "Bay City Municipal Airport",
       "iata_code": "BBC",
       "icao_code": "KBYY",
@@ -1597,14 +823,6 @@
       "icao_code": "KBAB",
       "lat": 39.14611,
       "lng": -121.43138,
-      "country_code": "US"
-    },
-    {
-      "name": "Bear Creek 3 Airport",
-      "iata_code": "BCC",
-      "icao_code": null,
-      "lat": 63.57496,
-      "lng": -156.14969,
       "country_code": "US"
     },
     {
@@ -1640,22 +858,6 @@
       "country_code": "US"
     },
     {
-      "name": "Beaufort, Michael J Smith Field Airport",
-      "iata_code": null,
-      "icao_code": "KMRH",
-      "lat": 34.73361,
-      "lng": -76.66056,
-      "country_code": "US"
-    },
-    {
-      "name": "Beaumont Municipal Airport",
-      "iata_code": "BMT",
-      "icao_code": "KBMT",
-      "lat": 30.07044,
-      "lng": -94.21554,
-      "country_code": "US"
-    },
-    {
       "name": "Beauregard Regional Airport",
       "iata_code": "DRI",
       "icao_code": "KDRI",
@@ -1672,14 +874,6 @@
       "country_code": "US"
     },
     {
-      "name": "Beaver Island Airport",
-      "iata_code": null,
-      "icao_code": "KSJX",
-      "lat": 45.69294,
-      "lng": -85.56287,
-      "country_code": "US"
-    },
-    {
       "name": "Beaver Airport",
       "iata_code": "WBQ",
       "icao_code": "PAWB",
@@ -1688,91 +882,11 @@
       "country_code": "US"
     },
     {
-      "name": "Beaver Ruin Heliport",
-      "iata_code": "JAO",
-      "icao_code": null,
-      "lat": 33.93066,
-      "lng": -84.15325,
-      "country_code": "US"
-    },
-    {
-      "name": "Bedford County Airport",
-      "iata_code": null,
-      "icao_code": "KHMZ",
-      "lat": 40.08804,
-      "lng": -78.51666,
-      "country_code": "US"
-    },
-    {
       "name": "Beech Factory Airport",
       "iata_code": "BEC",
       "icao_code": "KBEC",
       "lat": 37.69447,
       "lng": -97.21499,
-      "country_code": "US"
-    },
-    {
-      "name": "Beech River Regional Airport",
-      "iata_code": null,
-      "icao_code": "KPVE",
-      "lat": 35.65738,
-      "lng": -88.19731,
-      "country_code": "US"
-    },
-    {
-      "name": "Beeville Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KBEA",
-      "lat": 28.36752,
-      "lng": -97.79672,
-      "country_code": "US"
-    },
-    {
-      "name": "Belfast Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KBST",
-      "lat": 44.40915,
-      "lng": -69.00871,
-      "country_code": "US"
-    },
-    {
-      "name": "Bell Island Hot Springs Seaplane Base",
-      "iata_code": "KBE",
-      "icao_code": null,
-      "lat": 55.9267,
-      "lng": -131.57587,
-      "country_code": "US"
-    },
-    {
-      "name": "Belle Fourche Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KEFC",
-      "lat": 44.73326,
-      "lng": -103.86148,
-      "country_code": "US"
-    },
-    {
-      "name": "Belle Plaine Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KTZT",
-      "lat": 41.88329,
-      "lng": -92.28366,
-      "country_code": "US"
-    },
-    {
-      "name": "Bellefontaine Regional Airport",
-      "iata_code": null,
-      "icao_code": "KEDJ",
-      "lat": 40.37012,
-      "lng": -83.81793,
-      "country_code": "US"
-    },
-    {
-      "name": "Belleville Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KRPB",
-      "lat": 39.81434,
-      "lng": -97.65855,
       "country_code": "US"
     },
     {
@@ -1800,59 +914,11 @@
       "country_code": "US"
     },
     {
-      "name": "Ben Bruce Memorial Airpark",
-      "iata_code": "EVA",
-      "icao_code": null,
-      "lat": 30.32635,
-      "lng": -94.07597,
-      "country_code": "US"
-    },
-    {
-      "name": "Bend Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KBDN",
-      "lat": 44.09348,
-      "lng": -121.20173,
-      "country_code": "US"
-    },
-    {
       "name": "Benson Municipal Airport",
       "iata_code": "BBB",
       "icao_code": "KBBB",
       "lat": 45.33163,
       "lng": -95.65087,
-      "country_code": "US"
-    },
-    {
-      "name": "Benton Field",
-      "iata_code": "BZF",
-      "icao_code": null,
-      "lat": 40.57531,
-      "lng": -122.40646,
-      "country_code": "US"
-    },
-    {
-      "name": "Bentonville Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KVBT",
-      "lat": 36.34563,
-      "lng": -94.2191,
-      "country_code": "US"
-    },
-    {
-      "name": "Berkeley County Airport",
-      "iata_code": null,
-      "icao_code": "KMKS",
-      "lat": 33.18922,
-      "lng": -80.03434,
-      "country_code": "US"
-    },
-    {
-      "name": "Berkeley",
-      "iata_code": "JBK",
-      "icao_code": null,
-      "lat": 37.86667,
-      "lng": -122.3,
       "country_code": "US"
     },
     {
@@ -1880,43 +946,11 @@
       "country_code": "US"
     },
     {
-      "name": "Bessemer Airport",
-      "iata_code": null,
-      "icao_code": "KEKY",
-      "lat": 33.31194,
-      "lng": -86.92546,
-      "country_code": "US"
-    },
-    {
-      "name": "Bethel, Bethel Airport",
-      "iata_code": null,
-      "icao_code": "KBET",
-      "lat": 60.78583,
-      "lng": -161.82639,
-      "country_code": "US"
-    },
-    {
       "name": "Bethel Airport",
       "iata_code": "BET",
       "icao_code": "PABE",
       "lat": 60.77972,
       "lng": -161.83778,
-      "country_code": "US"
-    },
-    {
-      "name": "Bethel Seaplane Base",
-      "iata_code": "JBT",
-      "icao_code": null,
-      "lat": 60.79107,
-      "lng": -161.75167,
-      "country_code": "US"
-    },
-    {
-      "name": "Bettles, Bettles Airport",
-      "iata_code": null,
-      "icao_code": "KBTT",
-      "lat": 66.91611,
-      "lng": -151.50889,
       "country_code": "US"
     },
     {
@@ -1944,14 +978,6 @@
       "country_code": "US"
     },
     {
-      "name": "Big Bear City Airport",
-      "iata_code": "RBF",
-      "icao_code": null,
-      "lat": 34.26295,
-      "lng": -116.85465,
-      "country_code": "US"
-    },
-    {
       "name": "Big Lake Airport",
       "iata_code": "BGQ",
       "icao_code": "PAGQ",
@@ -1968,14 +994,6 @@
       "country_code": "US"
     },
     {
-      "name": "Big Pine Sands STOLGround",
-      "iata_code": "XFT",
-      "icao_code": null,
-      "lat": 24.723717,
-      "lng": -81.387856,
-      "country_code": "US"
-    },
-    {
       "name": "Big Piney-Marbleton Airport",
       "iata_code": "BPI",
       "icao_code": "KBPI",
@@ -1984,14 +1002,6 @@
       "country_code": "US"
     },
     {
-      "name": "Big Sandy Regional Airport",
-      "iata_code": null,
-      "icao_code": "KSJS",
-      "lat": 37.74803,
-      "lng": -82.63904,
-      "country_code": "US"
-    },
-    {
       "name": "Big Spring McMahon-Wrinkle Airport",
       "iata_code": "HCA",
       "icao_code": "KBPG",
@@ -2005,30 +1015,6 @@
       "icao_code": "KBPG",
       "lat": 32.21262,
       "lng": -101.52179,
-      "country_code": "US"
-    },
-    {
-      "name": "Bigfork Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KFOZ",
-      "lat": 47.78035,
-      "lng": -93.6481,
-      "country_code": "US"
-    },
-    {
-      "name": "Biggs Army Air Field",
-      "iata_code": "BIF",
-      "icao_code": "KBIF",
-      "lat": 31.84955,
-      "lng": -106.38026,
-      "country_code": "US"
-    },
-    {
-      "name": "Billy G Ray Field",
-      "iata_code": null,
-      "icao_code": "KCNP",
-      "lat": 41.07639,
-      "lng": -102.46237,
       "country_code": "US"
     },
     {
@@ -2048,22 +1034,6 @@
       "country_code": "US"
     },
     {
-      "name": "Birch Creek Airport",
-      "iata_code": "KBC",
-      "icao_code": null,
-      "lat": 66.2698,
-      "lng": -145.8186,
-      "country_code": "US"
-    },
-    {
-      "name": "Birchwood Airport",
-      "iata_code": null,
-      "icao_code": "PABV",
-      "lat": 61.41611,
-      "lng": -149.50861,
-      "country_code": "US"
-    },
-    {
       "name": "Birmingham-Shuttlesworth International Airport",
       "iata_code": "BHM",
       "icao_code": "KBHM",
@@ -2077,14 +1047,6 @@
       "icao_code": "KDUG",
       "lat": 31.46899,
       "lng": -109.60424,
-      "country_code": "US"
-    },
-    {
-      "name": "Bisbee Municipal Airport",
-      "iata_code": "BSQ",
-      "icao_code": null,
-      "lat": 31.37092,
-      "lng": -109.88502,
       "country_code": "US"
     },
     {
@@ -2120,22 +1082,6 @@
       "country_code": "US"
     },
     {
-      "name": "Black River Falls Area Airport",
-      "iata_code": null,
-      "icao_code": "KBCK",
-      "lat": 44.25299,
-      "lng": -90.84774,
-      "country_code": "US"
-    },
-    {
-      "name": "Black Rock Airport",
-      "iata_code": null,
-      "icao_code": "KZUN",
-      "lat": 35.08323,
-      "lng": -108.79178,
-      "country_code": "US"
-    },
-    {
       "name": "Blackwell-Tonkawa Municipal Airport",
       "iata_code": "BWL",
       "icao_code": "KBKN",
@@ -2144,67 +1090,11 @@
       "country_code": "US"
     },
     {
-      "name": "Blair Executive Airport",
-      "iata_code": null,
-      "icao_code": "KBTA",
-      "lat": 41.414908,
-      "lng": -96.109136,
-      "country_code": "US"
-    },
-    {
-      "name": "Blair Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KBTA",
-      "lat": 41.41615,
-      "lng": -96.10711,
-      "country_code": "US"
-    },
-    {
-      "name": "Blairsville Airport",
-      "iata_code": null,
-      "icao_code": "KDZJ",
-      "lat": 34.85283,
-      "lng": -83.99878,
-      "country_code": "US"
-    },
-    {
-      "name": "Blake Field",
-      "iata_code": null,
-      "icao_code": "KAJZ",
-      "lat": 38.78094,
-      "lng": -108.06739,
-      "country_code": "US"
-    },
-    {
-      "name": "Blake Sky Park Airport (Private)",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 38.45755,
-      "lng": -122.05038,
-      "country_code": "US"
-    },
-    {
-      "name": "Blakely Island Airport",
-      "iata_code": "BYW",
-      "icao_code": null,
-      "lat": 48.58001,
-      "lng": -122.82362,
-      "country_code": "US"
-    },
-    {
       "name": "Blanding Municipal Airport",
       "iata_code": "BDG",
       "icao_code": "KBDG",
       "lat": 37.58303,
       "lng": -109.48329,
-      "country_code": "US"
-    },
-    {
-      "name": "BLM Fire Center Heliport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 39.11748,
-      "lng": -108.53954,
       "country_code": "US"
     },
     {
@@ -2224,14 +1114,6 @@
       "country_code": "US"
     },
     {
-      "name": "Bloyer Field Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 43.97321,
-      "lng": -90.48528,
-      "country_code": "US"
-    },
-    {
       "name": "Blue Canyon-Nyack Airport",
       "iata_code": "BLU",
       "icao_code": "KBLU",
@@ -2240,35 +1122,11 @@
       "country_code": "US"
     },
     {
-      "name": "Blue Earth Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KSBU",
-      "lat": 43.59595,
-      "lng": -94.08885,
-      "country_code": "US"
-    },
-    {
       "name": "Blue Grass Airport",
       "iata_code": "LEX",
       "icao_code": "KLEX",
       "lat": 38.03702,
       "lng": -84.60522,
-      "country_code": "US"
-    },
-    {
-      "name": "Blue Mountain Airport",
-      "iata_code": "VBM",
-      "icao_code": null,
-      "lat": 57.8575,
-      "lng": -157.08667,
-      "country_code": "US"
-    },
-    {
-      "name": "Blue Ridge Airport",
-      "iata_code": null,
-      "icao_code": "KMTV",
-      "lat": 36.63226,
-      "lng": -80.01802,
       "country_code": "US"
     },
     {
@@ -2304,38 +1162,6 @@
       "country_code": "US"
     },
     {
-      "name": "Bob White Field",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 28.735055,
-      "lng": -81.62694,
-      "country_code": "US"
-    },
-    {
-      "name": "Bob Wiley Field",
-      "iata_code": null,
-      "icao_code": "KSFD",
-      "lat": 43.39167,
-      "lng": -99.8504,
-      "country_code": "US"
-    },
-    {
-      "name": "Bobs",
-      "iata_code": null,
-      "icao_code": "BOBS",
-      "lat": 35.391523,
-      "lng": -91.443706,
-      "country_code": "US"
-    },
-    {
-      "name": "Boca Raton Brightline Railway Station",
-      "iata_code": "RRN",
-      "icao_code": null,
-      "lat": 26.35361,
-      "lng": -80.08722,
-      "country_code": "US"
-    },
-    {
       "name": "Boca Raton Airport",
       "iata_code": "BCT",
       "icao_code": "KBCT",
@@ -2360,30 +1186,6 @@
       "country_code": "US"
     },
     {
-      "name": "Bolinder Field-Tooele Valley Airport",
-      "iata_code": null,
-      "icao_code": "KTVY",
-      "lat": 40.61227,
-      "lng": -112.35077,
-      "country_code": "US"
-    },
-    {
-      "name": "Bolingbrook's Clow International Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 41.69597,
-      "lng": -88.12923,
-      "country_code": "US"
-    },
-    {
-      "name": "Bolton Field",
-      "iata_code": null,
-      "icao_code": "KTZR",
-      "lat": 39.90615,
-      "lng": -83.13644,
-      "country_code": "US"
-    },
-    {
       "name": "Boone County Airport",
       "iata_code": "HRO",
       "icao_code": "KHRO",
@@ -2400,54 +1202,6 @@
       "country_code": "US"
     },
     {
-      "name": "Boone, Watauga County Hospital Heliport",
-      "iata_code": null,
-      "icao_code": "KTNB",
-      "lat": 36.2,
-      "lng": -81.65,
-      "country_code": "US"
-    },
-    {
-      "name": "Boothville Heliport",
-      "iata_code": null,
-      "icao_code": "KLNQ",
-      "lat": 29.35414,
-      "lng": -89.43591,
-      "country_code": "US"
-    },
-    {
-      "name": "Borrego Valley Airport",
-      "iata_code": "BXS",
-      "icao_code": null,
-      "lat": 33.25801,
-      "lng": -116.32469,
-      "country_code": "US"
-    },
-    {
-      "name": "Boscobel Airport",
-      "iata_code": null,
-      "icao_code": "KOVS",
-      "lat": 43.15678,
-      "lng": -90.68071,
-      "country_code": "US"
-    },
-    {
-      "name": "Boston Harbour Seaplane Base",
-      "iata_code": "BNH",
-      "icao_code": null,
-      "lat": 42.35475,
-      "lng": -71.04347,
-      "country_code": "US"
-    },
-    {
-      "name": "Boswell Bay Airport",
-      "iata_code": "BSW",
-      "icao_code": null,
-      "lat": 60.42306,
-      "lng": -146.14591,
-      "country_code": "US"
-    },
-    {
       "name": "Boulder City Municipal Airport",
       "iata_code": "BLD",
       "icao_code": "KBVU",
@@ -2456,27 +1210,11 @@
       "country_code": "US"
     },
     {
-      "name": "Boulder Junction Payzer Airport",
-      "iata_code": null,
-      "icao_code": "KBDJ",
-      "lat": 46.13742,
-      "lng": -89.64596,
-      "country_code": "US"
-    },
-    {
       "name": "Boulder Municipal Airport",
       "iata_code": "WBU",
       "icao_code": "KBDU",
       "lat": 40.03943,
       "lng": -105.22582,
-      "country_code": "US"
-    },
-    {
-      "name": "Boundary Airport",
-      "iata_code": "BYA",
-      "icao_code": null,
-      "lat": 64.07755,
-      "lng": -141.12325,
       "country_code": "US"
     },
     {
@@ -2528,14 +1266,6 @@
       "country_code": "US"
     },
     {
-      "name": "Boyne Mountain Airport",
-      "iata_code": null,
-      "icao_code": "KBFA",
-      "lat": 45.16416,
-      "lng": -84.92365,
-      "country_code": "US"
-    },
-    {
       "name": "Brackett Field Airport",
       "iata_code": "POC",
       "icao_code": "KPOC",
@@ -2576,30 +1306,6 @@
       "country_code": "US"
     },
     {
-      "name": "Brainerd Lakes Regional Airport",
-      "iata_code": "BRD",
-      "icao_code": "KBRD",
-      "lat": 46.39774,
-      "lng": -94.13721,
-      "country_code": "US"
-    },
-    {
-      "name": "Branch County Memorial Airport",
-      "iata_code": null,
-      "icao_code": "KOEB",
-      "lat": 41.93556,
-      "lng": -85.05479,
-      "country_code": "US"
-    },
-    {
-      "name": "Brandywine Airport",
-      "iata_code": null,
-      "icao_code": "KOQN",
-      "lat": 39.98986,
-      "lng": -75.57836,
-      "country_code": "US"
-    },
-    {
       "name": "Branson Airport",
       "iata_code": "BKG",
       "icao_code": "KBBG",
@@ -2608,67 +1314,11 @@
       "country_code": "US"
     },
     {
-      "name": "Branson West Municipal Airport- Emerson Field",
-      "iata_code": null,
-      "icao_code": "KFWB",
-      "lat": 36.70038,
-      "lng": -93.39876,
-      "country_code": "US"
-    },
-    {
       "name": "Brawley Municipal Airport",
       "iata_code": "BWC",
       "icao_code": "KBWC",
       "lat": 32.99178,
       "lng": -115.51358,
-      "country_code": "US"
-    },
-    {
-      "name": "Braxton County Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 38.68511,
-      "lng": -80.65127,
-      "country_code": "US"
-    },
-    {
-      "name": "Breckenridge-Wahpeton Interstate Airport",
-      "iata_code": "WAH",
-      "icao_code": "KBWP",
-      "lat": 46.24635,
-      "lng": -96.60674,
-      "country_code": "US"
-    },
-    {
-      "name": "Breezy Point Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 46.5959,
-      "lng": -94.22004,
-      "country_code": "US"
-    },
-    {
-      "name": "Bremerton National Airport",
-      "iata_code": "PWT",
-      "icao_code": "KPWT",
-      "lat": 47.49275,
-      "lng": -122.76243,
-      "country_code": "US"
-    },
-    {
-      "name": "Brenham Municipal Airport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 30.219,
-      "lng": -96.37428,
-      "country_code": "US"
-    },
-    {
-      "name": "Brenner Field",
-      "iata_code": null,
-      "icao_code": "KFNB",
-      "lat": 40.07834,
-      "lng": -95.59193,
       "country_code": "US"
     },
     {
@@ -2688,43 +1338,11 @@
       "country_code": "US"
     },
     {
-      "name": "Bridgeport Municipal Airport",
-      "iata_code": null,
-      "icao_code": "KXBP",
-      "lat": 33.17456,
-      "lng": -97.82865,
-      "country_code": "US"
-    },
-    {
       "name": "Brigham City Airport",
       "iata_code": "BMC",
       "icao_code": "KBMC",
       "lat": 41.55239,
       "lng": -112.06226,
-      "country_code": "US"
-    },
-    {
-      "name": "Bristow Galliano Heliport",
-      "iata_code": null,
-      "icao_code": null,
-      "lat": 29.41333,
-      "lng": -90.29889,
-      "country_code": "US"
-    },
-    {
-      "name": "Britton Municipal Airport",
-      "iata_code": "TTO",
-      "icao_code": "KBTN",
-      "lat": 45.81636,
-      "lng": -97.74683,
-      "country_code": "US"
-    },
-    {
-      "name": "Broadus Airport",
-      "iata_code": "BDX",
-      "icao_code": null,
-      "lat": 45.47205,
-      "lng": -105.46469,
       "country_code": "US"
     },
     {
@@ -25502,6 +24120,318 @@
       "lat": 40.79768,
       "lng": -80.1613,
       "country_code": "US"
+    },
+    {
+      "name": "Cancun International Airport",
+      "iata_code": "CUN",
+      "icao_code": "MMUN",
+      "lat": 21.03653,
+      "lng": -86.87708,
+      "country_code": "MX"
+    },
+    {
+      "name": "Guadalajara International Airport",
+      "iata_code": "GDL",
+      "icao_code": "MMGL",
+      "lat": 20.5218,
+      "lng": -103.31117,
+      "country_code": "MX"
+    },
+    {
+      "name": "Ixtapa-Zihuatanejo International Airport",
+      "iata_code": "ZIH",
+      "icao_code": "MMZH",
+      "lat": 17.60157,
+      "lng": -101.46054,
+      "country_code": "MX"
+    },
+    {
+      "name": "Los Cabos International Airport",
+      "iata_code": "SJD",
+      "icao_code": "MMSD",
+      "lat": 23.15185,
+      "lng": -109.72104,
+      "country_code": "MX"
+    },
+    {
+      "name": "Playa de Oro International Airport",
+      "iata_code": "ZLO",
+      "icao_code": "MMZO",
+      "lat": 19.14478,
+      "lng": -104.55863,
+      "country_code": "MX"
+    },
+    {
+      "name": "General Rafael Buelna International Airport",
+      "iata_code": "MZT",
+      "icao_code": "MMMZ",
+      "lat": 23.16136,
+      "lng": -106.26607,
+      "country_code": "MX"
+    },
+    {
+      "name": "Licenciado Gustavo Diaz Ordaz International Airport",
+      "iata_code": "PVR",
+      "icao_code": "MMPR",
+      "lat": 20.68008,
+      "lng": -105.25417,
+      "country_code": "MX"
+    },
+    {
+      "name": "Calgary International Airport",
+      "iata_code": "YYC",
+      "icao_code": "CYYC",
+      "lat": 51.12933,
+      "lng": -114.01294,
+      "country_code": "CA"
+    },
+    {
+      "name": "Edmonton International Airport",
+      "iata_code": "YEG",
+      "icao_code": "CYEG",
+      "lat": 53.30801,
+      "lng": -113.58447,
+      "country_code": "CA"
+    },
+    {
+      "name": "Kelowna International Airport",
+      "iata_code": "YLW",
+      "icao_code": "CYLW",
+      "lat": 49.95611,
+      "lng": -119.37778,
+      "country_code": "CA"
+    },
+    {
+      "name": "Vancouver International Airport",
+      "iata_code": "YVR",
+      "icao_code": "CYVR",
+      "lat": 49.19489,
+      "lng": -123.17923,
+      "country_code": "CA"
+    },
+    {
+      "name": "Victoria International Airport",
+      "iata_code": "YYJ",
+      "icao_code": "CYYJ",
+      "lat": 48.64721,
+      "lng": -123.42716,
+      "country_code": "CA"
+    },
+    {
+      "name": "Daniel Oduber Quiros International Airport",
+      "iata_code": "LIR",
+      "icao_code": "MRLB",
+      "lat": 10.59329,
+      "lng": -85.54441,
+      "country_code": "CR"
+    },
+    {
+      "name": "Juan Santamaria International Airport",
+      "iata_code": "SJO",
+      "icao_code": "MROC",
+      "lat": 9.99386,
+      "lng": -84.20881,
+      "country_code": "CR"
+    },
+    {
+      "name": "La Aurora International Airport",
+      "iata_code": "GUA",
+      "icao_code": "MGGT",
+      "lat": 14.58327,
+      "lng": -90.52747,
+      "country_code": "GT"
+    },
+    {
+      "name": "Belize International Airport",
+      "iata_code": "BZE",
+      "icao_code": "MZBZ",
+      "lat": 17.53914,
+      "lng": -88.3082,
+      "country_code": "BZ"
+    },
+    {
+      "name": "Auckland International Airport",
+      "iata_code": "AKL",
+      "icao_code": "NZAA",
+      "lat": -37.00806,
+      "lng": 174.79167,
+      "country_code": "NZ"
+    },
+    {
+      "name": "London Heathrow Airport",
+      "iata_code": "LHR",
+      "icao_code": "EGLL",
+      "lat": 51.47115,
+      "lng": -0.45649,
+      "country_code": "GB"
+    },
+    {
+      "name": "London Gatwick Airport",
+      "iata_code": "LGW",
+      "icao_code": "EGKK",
+      "lat": 51.15609,
+      "lng": -0.17818,
+      "country_code": "GB"
+    },
+    {
+      "name": "Edinburgh Airport",
+      "iata_code": "EDI",
+      "icao_code": "EGPH",
+      "lat": 55.95,
+      "lng": -3.3725,
+      "country_code": "GB"
+    },
+    {
+      "name": "Glasgow Airport",
+      "iata_code": "GLA",
+      "icao_code": "EGPF",
+      "lat": 55.87194,
+      "lng": -4.43306,
+      "country_code": "GB"
+    },
+    {
+      "name": "Leonardo da Vinci-Fiumicino Airport",
+      "iata_code": "FCO",
+      "icao_code": "LIRF",
+      "lat": 41.79352,
+      "lng": 12.25259,
+      "country_code": "IT"
+    },
+    {
+      "name": "Keflavik International Airport",
+      "iata_code": "KEF",
+      "icao_code": "BIKF",
+      "lat": 63.985,
+      "lng": -22.60556,
+      "country_code": "IS"
+    },
+    {
+      "name": "Incheon International Airport",
+      "iata_code": "ICN",
+      "icao_code": "RKSI",
+      "lat": 37.4492,
+      "lng": 126.45095,
+      "country_code": "KR"
+    },
+    {
+      "name": "Gimpo International Airport",
+      "iata_code": "GMP",
+      "icao_code": "RKSS",
+      "lat": 37.566,
+      "lng": 126.80077,
+      "country_code": "KR"
+    },
+    {
+      "name": "Narita International Airport",
+      "iata_code": "NRT",
+      "icao_code": "RJAA",
+      "lat": 35.76472,
+      "lng": 140.38639,
+      "country_code": "JP"
+    },
+    {
+      "name": "Tokyo International Airport",
+      "iata_code": "HND",
+      "icao_code": "RJTT",
+      "lat": 35.55226,
+      "lng": 139.77969,
+      "country_code": "JP"
+    },
+    {
+      "name": "Kansai International Airport",
+      "iata_code": "KIX",
+      "icao_code": "RJBB",
+      "lat": 34.42731,
+      "lng": 135.24407,
+      "country_code": "JP"
+    },
+    {
+      "name": "Fukuoka Airport",
+      "iata_code": "FUK",
+      "icao_code": "RJFF",
+      "lat": 33.58594,
+      "lng": 130.45069,
+      "country_code": "JP"
+    },
+    {
+      "name": "New Chitose Airport",
+      "iata_code": "CTS",
+      "icao_code": "RJCC",
+      "lat": 42.7752,
+      "lng": 141.69228,
+      "country_code": "JP"
+    },
+    {
+      "name": "Fa'a'a International Airport",
+      "iata_code": "PPT",
+      "icao_code": "NTAA",
+      "lat": -17.55375,
+      "lng": -149.60724,
+      "country_code": "PF"
+    },
+    {
+      "name": "Bora-Bora Airport",
+      "iata_code": "BOB",
+      "icao_code": "NTTB",
+      "lat": -16.44438,
+      "lng": -151.75129,
+      "country_code": "PF"
+    },
+    {
+      "name": "Raiatea Airport",
+      "iata_code": "RFP",
+      "icao_code": "NTTR",
+      "lat": -16.7229,
+      "lng": -151.466,
+      "country_code": "PF"
+    },
+    {
+      "name": "Rarotonga International Airport",
+      "iata_code": "RAR",
+      "icao_code": "NCRG",
+      "lat": -21.20274,
+      "lng": -159.80556,
+      "country_code": "CK"
+    },
+    {
+      "name": "Sydney International Airport",
+      "iata_code": "SYD",
+      "icao_code": "YSSY",
+      "lat": -33.94611,
+      "lng": 151.17722,
+      "country_code": "AU"
+    },
+    {
+      "name": "Melbourne Airport",
+      "iata_code": "MEL",
+      "icao_code": "YMML",
+      "lat": -37.67333,
+      "lng": 144.84333,
+      "country_code": "AU"
+    },
+    {
+      "name": "Brisbane Airport",
+      "iata_code": "BNE",
+      "icao_code": "YBBN",
+      "lat": -27.38417,
+      "lng": 153.1175,
+      "country_code": "AU"
+    },
+    {
+      "name": "Perth Airport",
+      "iata_code": "PER",
+      "icao_code": "YPPH",
+      "lat": -31.94028,
+      "lng": 115.96694,
+      "country_code": "AU"
+    },
+    {
+      "name": "Adelaide Airport",
+      "iata_code": "ADL",
+      "icao_code": "YPAD",
+      "lat": -34.945,
+      "lng": 138.53056,
+      "country_code": "AU"
     },
     {
       "name": "Zephyrhills Municipal Airport",
