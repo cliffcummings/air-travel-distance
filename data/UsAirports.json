@@ -58,22 +58,6 @@
       "country_code": "US"
     },
     {
-      "name": "Akutan Seaplane Base",
-      "iata_code": "KQA",
-      "icao_code": "PAUT",
-      "lat": 54.13338,
-      "lng": -165.77792,
-      "country_code": "US"
-    },
-    {
-      "name": "Akutan Seaplane Base",
-      "iata_code": "KQA",
-      "icao_code": "PAUT",
-      "lat": 54.13338,
-      "lng": -165.77792,
-      "country_code": "US"
-    },
-    {
       "name": "Alakanuk Airport",
       "iata_code": "AUK",
       "icao_code": "PAUK",
@@ -111,14 +95,6 @@
       "icao_code": "PANC",
       "lat": 61.17417,
       "lng": -149.99611,
-      "country_code": "US"
-    },
-    {
-      "name": "Angoon Seaplane Base",
-      "iata_code": "AGN",
-      "icao_code": "PAGN",
-      "lat": 57.5055,
-      "lng": -134.59627,
       "country_code": "US"
     },
     {
@@ -402,14 +378,6 @@
       "country_code": "US"
     },
     {
-      "name": "Coffman Cove Seaplane Base",
-      "iata_code": "KCC",
-      "icao_code": "PAKC",
-      "lat": 56.01075,
-      "lng": -132.83275,
-      "country_code": "US"
-    },
-    {
       "name": "Cold Bay Airport",
       "iata_code": "CDB",
       "icao_code": "PACD",
@@ -522,14 +490,6 @@
       "country_code": "US"
     },
     {
-      "name": "Elfin Cove Seaplane Base",
-      "iata_code": "ELV",
-      "icao_code": "PAEL",
-      "lat": 58.195,
-      "lng": -136.34722,
-      "country_code": "US"
-    },
-    {
       "name": "Elim Airport",
       "iata_code": "ELI",
       "icao_code": "PFEL",
@@ -583,14 +543,6 @@
       "icao_code": "PFYU",
       "lat": 66.57139,
       "lng": -145.25028,
-      "country_code": "US"
-    },
-    {
-      "name": "Funter Bay Seaplane Base",
-      "iata_code": "FNR",
-      "icao_code": "PANR",
-      "lat": 58.25417,
-      "lng": -134.89778,
       "country_code": "US"
     },
     {
@@ -738,14 +690,6 @@
       "country_code": "US"
     },
     {
-      "name": "Hydaburg Seaplane Base",
-      "iata_code": "HYG",
-      "icao_code": "PAHY",
-      "lat": 55.20611,
-      "lng": -132.82806,
-      "country_code": "US"
-    },
-    {
       "name": "Igiugig Airport",
       "iata_code": "IGG",
       "icao_code": "PAIG",
@@ -791,14 +735,6 @@
       "icao_code": "PAFE",
       "lat": 56.96209,
       "lng": -133.91187,
-      "country_code": "US"
-    },
-    {
-      "name": "Kake Seaplane Base",
-      "iata_code": "KAE",
-      "icao_code": "PAFE",
-      "lat": 56.973,
-      "lng": -133.945999,
       "country_code": "US"
     },
     {
@@ -1154,14 +1090,6 @@
       "country_code": "US"
     },
     {
-      "name": "Metlakatla Seaplane Base",
-      "iata_code": "MTM",
-      "icao_code": "PAMM",
-      "lat": 55.13083,
-      "lng": -131.57806,
-      "country_code": "US"
-    },
-    {
       "name": "Middleton Island Airport",
       "iata_code": "MDO",
       "icao_code": "PAMD",
@@ -1354,14 +1282,6 @@
       "country_code": "US"
     },
     {
-      "name": "Point Baker Seaplane Base",
-      "iata_code": "KPB",
-      "icao_code": "PFKP",
-      "lat": 56.35816,
-      "lng": -133.62891,
-      "country_code": "US"
-    },
-    {
       "name": "Point Hope Airport",
       "iata_code": "PHO",
       "icao_code": "PAPO",
@@ -1375,14 +1295,6 @@
       "icao_code": "PPIZ",
       "lat": 69.73302,
       "lng": -163.01568,
-      "country_code": "US"
-    },
-    {
-      "name": "Port Alexander Seaplane Base",
-      "iata_code": "PTD",
-      "icao_code": "PAAP",
-      "lat": 56.24667,
-      "lng": -134.64806,
       "country_code": "US"
     },
     {
@@ -1527,6 +1439,14 @@
       "icao_code": "PACM",
       "lat": 61.84467,
       "lng": -165.57998,
+      "country_code": "US"
+    },
+    {
+      "name": "Seattle-Tacoma International Airport",
+      "iata_code": "SEA",
+      "icao_code": "KSEA",
+      "lat": 47.44899,
+      "lng": -122.30929,
       "country_code": "US"
     },
     {
@@ -1847,14 +1767,6 @@
       "icao_code": "PAWS",
       "lat": 61.57194,
       "lng": -149.54056,
-      "country_code": "US"
-    },
-    {
-      "name": "Waterfall Seaplane Base",
-      "iata_code": "KWF",
-      "icao_code": "POKW",
-      "lat": 55.29484,
-      "lng": -133.24575,
       "country_code": "US"
     },
     {
